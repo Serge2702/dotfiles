@@ -1,0 +1,50 @@
+search ' '
+find opera
+rename panther_launcher.desktop
+open_with 1
+rename dmenu-launch.sh
+chmod 755
+search libini
+rename config_
+open_with nvim
+find .gem
+rename Ceti Bar
+rename Elementary
+find .loca
+search nautilus
+search files
+search firefox
+search screen
+search xterm
+rename VBoxSDL.desktop
+find .confi
+find ico
+search pdf
+find app
+search virtual
+open_with nvim -d
+open_with vimdiff
+rename theme_vertex.lua
+rename theme_ceti.lua
+rename theme.lua
+open_with sudoedit
+q
+touch alias
+touch export
+touch prompt
+rename exports
+rename aliases
+rename .zshrc_2015_12_03
+rename functions_
+rename functions
+w
+
+shell
+rename .vimrc_
+rename .vim_
+rename nvim_
+bulkrename 
+rename .Xresources
+rename ranger
+delete
+rename luakit
