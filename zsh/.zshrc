@@ -40,8 +40,6 @@ bindkey -v
 #NO EDITAR ANTES DE ESTA LÍNEA
 #================================================================================
 
-#Colores
-
 #Configuración propia:
 setopt nohashdirs
 setopt completealiases
@@ -97,20 +95,14 @@ zle -N zle-line-finish
 
 fi
 
-#if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
-    #function zle-line-init () {
-        #printf '%s' "${terminfo[smkx]}"
-    #}
-    #function zle-line-finish () {
-        #printf '%s' "${terminfo[rmkx]}"
-    #}
-    #zle -N zle-line-init
-    #zle -N zle-line-finish
-#fi
-
 setopt prompt_subst
 autoload -U colors && colors
 
+autoload -U   edit-command-line
+zle -N        edit-command-line
+bindkey -M vicmd 'v' edit-command-line
+
+setopt interactivecomments
 source ~/.dotfiles/zsh/exports
 source ~/.dotfiles/zsh/aliases
 source ~/.dotfiles/zsh/functions

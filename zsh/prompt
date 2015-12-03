@@ -68,24 +68,6 @@ fi
 #    ▀ ▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▉ ▊ ▋ ▌ ▍ ▎ ▏ ▐ ░ ▒ ▓ ▔ ▕ ▖ ▗ ▘ ▙ ▚ ▛ ▜ ▝ ▞ ▟ │
 #┌┐└┘─│┴┬┤├┼╼╽╾╿
 
-#PROMPT='%{%B%K{$n_blue}%F{$n_white}%} %n %{%b%K{$n_green}%F{$n_blue}%}$separador1%{%B%F{$n_white}%} %m %{%b%K{$n_red}%F{$n_green}%}$separador1%{%B%F{$n_white}%} $dir_actual %{%b%k%F{$n_red}%}$separador1
-#$prompt_is_ssh$separador1$numero_tmux$separador1$nivel_ranger$separador1%{%K{$n_red}%B%F{$n_white}%} %#%(0?,, %{%b%K{$n_red}%F{$n_white}%}$separador2 %{%B%F{$n_white}%}%?) %{%b%k%F{$n_red}%}$separador1%{%b%k$reset_color%} '
-
-#RPROMPT='%{%F{$n_red}%}$separador3%{%B%K{$n_red}%F{$n_white}%} %* %{%b%F{$n_red}%}$separador1%{$reset_color%}'
-#│┌┐└┘─
-#PROMPT='%{%B%F{$n_blue}%}┌─%{%B%F{$n_red}%}[%{%B%F{$n_blue}%}%n%{%B%F{$n_yellow}%}@%{%B%F{$n_green}%}%m%{%B%F{$n_red}%}]%{%B%F{$n_blue}%}─%{%B%F{$n_red}%}[$dir_actual]
-#%{%B%F{$n_blue}%}└─$prompt_is_ssh$nivel_ranger%{%B%F{$n_red}%}[%(0?,%{%B%F{$n_green}%},%{%B%F{$n_red}%})%#%{%B%F{$n_red}%}] %{$reset_color%}'
 PROMPT='%{%B%F{$n_blue}%}%n%{%B%F{$n_yellow}%}@%{%B%F{$n_green}%}%m%{%B%F{$n_red}%} [$dir_actual]
 $prompt_is_ssh$nivel_ranger%(0?,%{%B%F{$n_green}%},%{%B%F{$n_red}%})%# %{$reset_color%}'
-#RPROMPT='$prompt_is_ssh$nivel_ranger %{$reset_color%}'
 
-#terminfo_down_sc=$terminfo[cud1]$terminfo[cuu1]$terminfo[sc]$terminfo[cud1]
-#PS1_2="$(acpi -t)"
-#PS1="%{$terminfo_down_sc$PS1_2$terminfo[rc]%} %# %{$reset_color%}"
-#preexec () { print -rn -- $terminfo[el]; }
-
-autoload -U   edit-command-line
-zle -N        edit-command-line
-bindkey -M vicmd 'v' edit-command-line
-
-setopt interactivecomments
