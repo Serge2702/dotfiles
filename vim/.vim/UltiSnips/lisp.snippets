@@ -1,0 +1,45 @@
+snippet defun "Define una función" 
+(defun ${1:función} (${2:argumentos})
+;${3:Descripción}
+  $0
+  )
+endsnippet
+
+snippet cond "Condicional"
+(cond
+  ((${1:condición}) ${2:acción})$0
+  (t ))
+endsnippet
+
+snippet if "if"
+(if (${1:condición}) ${2:acción})
+endsnippet
+
+snippet case "Case"
+(case ${1:variable}
+  (${2:valor $0}))
+endsnippet
+
+snippet loop "Ciclo loop"
+(loop for ${1:k} ${2:from} ${3:0} ${4:to} ${5:fin} ${6:do}
+  $0)
+endsnippet
+
+
+snippet itera "Ciclo loop"
+(loop for ${1:k} ${2:in} ${3:lista} ${4:do}
+  $0)
+endsnippet
+
+snippet let "let"
+(let ((${1:variable}))
+  $0
+  )
+endsnippet
+
+snippet defmacro "Define una macro" 
+(defmacro ${1:nombre} (${2:argumentos})
+;${3:Descripción}
+  $0
+  )
+endsnippet

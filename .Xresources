@@ -1,0 +1,250 @@
+Xft.dpi: 96
+!Xft.dpi: 141
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.rgba: rgb
+Xft.hinting: 1
+Xft.hintstyle:  hintslight
+
+Xcursor.theme: Openzone\ Black\ Slim
+Xcursor.size: 16
+
+XTerm*faceName: Input:size=13
+!XTerm*faceName: Termsyn:size=16
+
+!!Custom: De la imagen de rombos
+!XTerm*background:	#2d2d2d
+!XTerm*foreground:	#dedede
+!XTerm*color0: #474559
+!XTerm*color1: #BA675E
+!XTerm*color2: #86B47C
+!XTerm*color3: #BEAF7C
+!XTerm*color4: #445880
+!XTerm*color5: #965C64
+!XTerm*color6: #5792B2
+!XTerm*color7: #BEAF7C
+!XTerm*color8: #445066
+!XTerm*color9: #965C64
+!XTerm*color10: #52967F
+!XTerm*color11: #B49677
+!XTerm*color12: #466794
+!XTerm*color13: #7D5360
+!XTerm*color14: #6CA29D
+!XTerm*color15: #86B47C
+
+!XTerm*background: #434558
+!XTerm*color0: #434558
+!XTerm*color1: #B86C60
+!XTerm*color2: #59A389
+!XTerm*color3: #BBA278
+!XTerm*color4: #45618E
+!XTerm*color5: #856E87
+!XTerm*color6: #528EB3
+!XTerm*color7: #BBA278
+!XTerm*color8: #534958
+!XTerm*color9: #985E65
+!XTerm*color10: #517D70
+!XTerm*color11: #8AB47E
+!XTerm*color12: #48759A
+!XTerm*color13: #B86C60
+!XTerm*color14: #59A389
+!XTerm*color15: #A19787
+!XTerm*foreground: #A19787
+
+XTerm*geometry: 80x24
+
+!! special
+!*foreground:   #ffffff
+!!*background:   #172637
+!*background:   #343A41
+!*cursorColor:  #ffffff
+!! black
+!*color0:       #131313
+!*color8:       #4b4b4b
+!! red
+!*color1:       #c44949
+!*color9:       #ed6b6b
+!! green
+!*color2:       #76c449
+!*color10:      #aced6b
+!! yellow
+!*color3:       #c49749
+!*color11:      #edb76b
+!! blue
+!*color4:       #4976c4
+!*color12:      #6ba1ed
+!! magenta
+!*color5:       #c449c4
+!*color13:      #ed6bed
+!! cyan
+!*color6:       #49bac4
+!*color14:      #6be2ed
+!! white
+!*color7:       #cfcfcf
+!*color15:      #ffffff
+
+!!Fruits - Really good!
+!XTerm*background: #20150C
+!XTerm*color0: #20150C
+!XTerm*color8: #20150C
+!XTerm*color1: #D3260E
+!XTerm*color9: #D3260E
+!XTerm*color2: #81A310
+!XTerm*color10: #81A310
+!XTerm*color3: #EFAD06
+!XTerm*color11: #EFAD06
+!XTerm*color4: #375774
+!XTerm*color12: #375774
+!XTerm*color5: #BD5B82
+!XTerm*color13: #BD5B82
+!XTerm*color6: #92D3A3
+!XTerm*color14: #92D3A3
+!XTerm*color7: #E0E5DD
+!XTerm*color15: #E0E5DD
+!XTerm*foreground: #E0E5DD
+
+!XTerm*background: #2d2d2d
+!XTerm*color0: #4B3822
+!XTerm*color8: #813D24
+!XTerm*color1: #A93D2E
+!XTerm*color9: #BF5744
+!XTerm*color2: #65672E
+!XTerm*color10: #7D893E
+!XTerm*color3: #D9AF30
+!XTerm*color11: #D9BE56
+!XTerm*color4: #4D5E5F
+!XTerm*color12: #557E8D
+!XTerm*color5: #D1725C
+!XTerm*color13: #D89375
+!XTerm*color6: #699EB0
+!XTerm*color14: #8BBCCB
+!XTerm*color7: #EDE1BE
+!XTerm*color15: #EFECE3
+!XTerm*foreground: #EFECE3
+
+!!Light Background.
+!*background: #EFECE3
+!*foreground: #4B3822
+
+!!Brown background.
+!*background: #4B3822
+!*foreground: #EFECE3
+
+!Black background.
+XTerm*background: #2d2d2d
+XTerm*foreground: #EFECE3
+XTerm*color0: #4B3822
+XTerm*color8: #4B3822
+XTerm*color1: #A93D2E
+XTerm*color9: #A93D2E
+XTerm*color2: #7D893E
+XTerm*color10: #7D893E
+XTerm*color3: #D9AF30
+XTerm*color11: #D9AF30
+XTerm*color4: #557E8D
+XTerm*color12: #557E8D
+XTerm*color5: #D1725C
+XTerm*color13: #D1725C
+XTerm*color6: #8BBCCB
+XTerm*color14: #8BBCCB
+XTerm*color7: #EFECE3
+XTerm*color15: #EFECE3
+
+rofi.modi:                           window,run,ssh
+rofi.opacity:                        100
+rofi.width:                          100
+rofi.lines:                          15
+rofi.columns:                        1
+!rofi.font:                           DejaVu Sans Mono 14
+rofi.font:                           Input 13
+!rofi.fg:                             #ebeae5
+!rofi.bg:                             #050709
+rofi.color-enabled:                  true
+
+!Ceti 2
+!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
+rofi.color-normal:                   #343a41,#ffffff,#393f47,#4F86B3,#ffffff
+rofi.color-urgent:                   #343a41,#dc322f,#393f47,#dc322f,#ffffff
+rofi.color-active:                   #343a41,#c2cad0,#393f47,#4F86B3,#c2cad0
+!                                    'background', 'border'
+rofi.color-window:                   #343a41,#32383F
+!Vertex
+!!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
+!rofi.color-normal:                   #404142,#ffffff,#454649,#4080fb,#ffffff
+!rofi.color-urgent:                   #404142,#dc322f,#454649,#4080fb,#dc322f
+!rofi.color-active:                   #404142,#c2cad0,#454649,#4080fb,#c2cad0
+!!                                    'background', 'border'
+!rofi.color-window:                   #404142,#070504
+
+!rofi.fg-active:                      #268BD2
+!rofi.fg-urgent:                      #DC322F
+!rofi.hlfg-active:                    #FDF6E3
+!rofi.hlfg-urgent:                    #FDF6E3
+!rofi.bg-active:                      #FDF6E3
+!rofi.bg-urgent:                      #FDF6E3
+!rofi.hlbg-active:                    #268BD2
+!rofi.hlbg-urgent:                    #DC322F
+!rofi.bgalt:                          #050709
+!rofi.hlfg:                           #EEE8D5
+!rofi.hlbg:                           #586E75
+!rofi.bc:                             #ffffff
+rofi.bw:                             2
+rofi.location:                       2
+rofi.padding:                        5
+!rofi.yoffset:                        34
+rofi.yoffset:                        0
+rofi.xoffset:                        0
+rofi.fixed-num-lines:                false
+rofi.terminal:                       /usr/bin/gnome-terminal
+rofi.ssh-client:                     ssh
+rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}"
+rofi.run-command:                    {cmd}
+rofi.run-list-command:               
+rofi.run-shell-command:              {terminal} -e "{cmd}"
+rofi.disable-history:                false
+rofi.levenshtein-sort:               true
+rofi.case-sensitive:                 false
+rofi.sidebar-mode:                   true
+rofi.lazy-filter-limit:              5000
+rofi.eh:                             1
+rofi.auto-select:                    false
+rofi.parse-hosts:                    false
+rofi.combi-modi:                     window,run
+rofi.fuzzy:                          true
+rofi.m:                              0
+rofi.line-margin:                    3
+rofi.separator-style:                solid
+rofi.hide-scrollbar:                 false
+rofi.pid:                            /run/user/1000/rofi.pid
+rofi.kb-primary-paste:               Control+Shift+v,Shift+Insert
+rofi.kb-secondary-paste:             Control+v,Insert
+rofi.kb-clear-line:                  Control+u
+rofi.kb-move-front:                  Control+a
+rofi.kb-move-end:                    Control+e
+rofi.kb-move-word-back:              Alt+b
+rofi.kb-move-word-forward:           Alt+f
+rofi.kb-move-char-back:              Left,Control+b
+rofi.kb-move-char-forward:           Right,Control+f
+rofi.kb-remove-word-back:            Control+Alt+h
+rofi.kb-remove-word-forward:         Control+Alt+d
+rofi.kb-remove-char-forward:         Delete,Control+d
+rofi.kb-remove-char-back:            BackSpace,Control+h
+rofi.kb-accept-entry:                Control+j,Control+m,Return,KP_Enter
+rofi.kb-accept-custom:               Control+Return
+rofi.kb-accept-entry-continue:       Shift+Return
+rofi.kb-mode-next:                   Shift+Right,Control+Tab
+rofi.kb-mode-previous:               Shift+Left,Control+Shift+Tab
+rofi.kb-toggle-case-sensitivity:     grave,dead_grave
+rofi.kb-delete-entry:                Shift+Delete
+rofi.kb-row-left:                    Control+Page_Up
+rofi.kb-row-right:                   Control+Page_Down
+rofi.kb-row-up:                      Up,Control+p,Shift+Tab
+rofi.kb-row-down:                    Down,Control+n
+rofi.kb-row-tab:                     Tab
+rofi.kb-page-prev:                   Page_Up
+rofi.kb-page-next:                   Page_Down
+rofi.kb-row-first:                   Home,KP_Home
+rofi.kb-row-last:                    End,KP_End
+rofi.kb-row-select:                  Control+space
+rofi.kb-cancel:                      Escape
