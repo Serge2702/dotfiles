@@ -1,4 +1,3 @@
-search libini
 rename config_
 find .gem
 rename Ceti Bar
@@ -46,5 +45,6 @@ rename gnome-dropdown-terminal.sh
 rename any_term_dropdown-terminal.sh
 touch README.md
 open_with nvim
-delete
 rename any_term_dropdown.sh
+delete
+find .do
