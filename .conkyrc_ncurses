@@ -1,0 +1,54 @@
+conky.config = {
+    background = false,
+    cpu_avg_samples = 2,
+    net_avg_samples = 2,
+    diskio_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_x = false,
+    out_to_ncurses = true,
+    out_to_stderr = false,
+    extra_newline = false,
+    update_interval = 1.0,
+    show_graph_scale = false,
+    show_graph_range = false,
+    double_buffer = false,
+    default_graph_height = 1000,
+    default_graph_width = 500,
+
+    own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager,above',
+    --console_graph_ticks = [[▁,▂,▃,▄,▅,▆,▇,█]]
+    console_graph_ticks = [[ ,▁,▂,▃,▄,▅,▆,▇,█]]
+}
+
+--${color1}DISK: ${color0}R ${diskio_read sda} - W ${diskio_write sda} \
+--${if_existing /sys/class/net/enp4s0/operstate up}${color1}ETHERNET: ${color0}D ${downspeed enp4s0} - U ${upspeed enp4s0} \
+--${else}${if_existing /sys/class/net/wlp3s0/operstate up}${color1}WIFI: ${color0}D ${downspeed wlp3s0} - U ${upspeed wlp3s0}${endif}${endif}\
+--${alignr}${color1}CPU: ${color0}${cpu cpu0}% ${color1}RAM: ${color0}$mem ($memwithbuffers) ${color1}THERMAL: ${color0}$acpitemp°C
+
+--${color blue}TOTAL : ${cpugraph cpu0 1,50} ${cpu cpu0}% ${color}
+--${color red}CORE 1: ${cpugraph cpu1 1,50} ${cpu cpu1}% ${color}
+conky.text=
+[[
+ TOTAL: ${cpugraph cpu0 1,25} ${cpu cpu0}%
+CORE 1: ${cpugraph cpu1 1,25} ${cpu cpu1}%
+CORE 2: ${cpugraph cpu2 1,25} ${cpu cpu2}%  
+CORE 3: ${cpugraph cpu3 1,25} ${cpu cpu3}%  
+CORE 4: ${cpugraph cpu4 1,25} ${cpu cpu4}%  
+   RAM: ${membar 1,25} $mem ($memperc%)
+        ${memwithbuffersbar 1,25} $memwithbuffers/$memmax
+  SWAP: $swap/ $swapmax ($swapperc%)     
+
+DISK: 
+      R ${diskiograph_read 1,25 sda } ${diskio_read sda}
+      W ${diskiograph_write 1,25 sda } ${diskio_write sda}  
+${if_existing /sys/class/net/enp4s0/operstate up}ETHERNET:
+      D ${downspeedgraph enp4s0 1,25 } ${downspeed enp4s0} 
+      U ${upspeedgraph enp4s0 1,25 } ${upspeed enp4s0}${endif} 
+${if_existing /sys/class/net/wlp3s0/operstate up}WIFI: 
+      D ${downspeedgraph wlp3s0 1,25 } ${downspeed wlp3s0} 
+      U ${upspeedgraph wlp3s0 1,25 } ${upspeed wlp3s0}${endif}
+
+THERMAL: $acpitemp°C 
+]]
+-- | UPDATES: ${execpi 900 /home/sergio/.local/bin/update_notifier.sh}

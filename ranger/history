@@ -1,12 +1,5 @@
-search ' '
-find opera
-rename panther_launcher.desktop
-open_with 1
-rename dmenu-launch.sh
-chmod 755
 search libini
 rename config_
-open_with nvim
 find .gem
 rename Ceti Bar
 rename Elementary
@@ -46,5 +39,12 @@ rename nvim_
 bulkrename 
 rename .Xresources
 rename ranger
-delete
 rename luakit
+open_with vim
+mkdir gnome-dropdown-terminal
+rename gnome-dropdown-terminal.sh
+rename any_term_dropdown-terminal.sh
+touch README.md
+open_with nvim
+delete
+rename any_term_dropdown.sh
