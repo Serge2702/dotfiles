@@ -157,25 +157,34 @@ rofi.width:                          100
 rofi.lines:                          15
 rofi.columns:                        1
 !rofi.font:                           DejaVu Sans Mono 14
-rofi.font:                           Input 13
+rofi.font:                           Input 12
 !rofi.fg:                             #ebeae5
 !rofi.bg:                             #050709
 rofi.color-enabled:                  true
 
-!Ceti 2
-!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
-rofi.color-normal:                   #343a41,#ffffff,#393f47,#4F86B3,#ffffff
-rofi.color-urgent:                   #343a41,#dc322f,#393f47,#dc322f,#ffffff
-rofi.color-active:                   #343a41,#c2cad0,#393f47,#4F86B3,#c2cad0
-!                                    'background', 'border'
-rofi.color-window:                   #343a41,#32383F
-!Vertex
+!!Ceti 2
+!!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
+!rofi.color-normal:                   #343a41,#ffffff,#393f47,#4F86B3,#ffffff
+!rofi.color-urgent:                   #343a41,#dc322f,#393f47,#dc322f,#ffffff
+!rofi.color-active:                   #343a41,#c2cad0,#393f47,#4F86B3,#c2cad0
+!!                                    'background', 'border'
+!rofi.color-window:                   #343a41,#32383F
+
+!!Vertex
 !!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
 !rofi.color-normal:                   #404142,#ffffff,#454649,#4080fb,#ffffff
 !rofi.color-urgent:                   #404142,#dc322f,#454649,#4080fb,#dc322f
 !rofi.color-active:                   #404142,#c2cad0,#454649,#4080fb,#c2cad0
 !!                                    'background', 'border'
 !rofi.color-window:                   #404142,#070504
+
+!!Arc
+!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
+rofi.color-normal:                   #ffffff,#525d76,#f5f5f5,#5294e2,#ffffff
+rofi.color-urgent:                   #ffffff,#dc322f,#f5f5f5,#5294e2,#dc322f
+rofi.color-active:                   #ffffff,#c2cad0,#f5f5f5,#5294e2,#c2cad0
+!                                    'background', 'border'
+rofi.color-window:                   #ffffff,#f5f5f5
 
 !rofi.fg-active:                      #268BD2
 !rofi.fg-urgent:                      #DC322F
