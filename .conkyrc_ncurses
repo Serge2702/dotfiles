@@ -39,7 +39,7 @@ CORE 4: ${cpugraph cpu4 1,25} ${cpu cpu4}%
         ${memwithbuffersbar 1,25} $memwithbuffers/$memmax
   SWAP: $swap/ $swapmax ($swapperc%)     
 
-DISK: 
+  DISK: 
       R ${diskiograph_read 1,25 sda } ${diskio_read sda}
       W ${diskiograph_write 1,25 sda } ${diskio_write sda}  
 ${if_existing /sys/class/net/enp4s0/operstate up}ETHERNET:
@@ -49,6 +49,11 @@ ${if_existing /sys/class/net/wlp3s0/operstate up}WIFI:
       D ${downspeedgraph wlp3s0 1,25 } ${downspeed wlp3s0} 
       U ${upspeedgraph wlp3s0 1,25 } ${upspeed wlp3s0}${endif}
 
-THERMAL: $acpitemp°C 
+  TEMP: $acpitemp°C 
+
+${if_running mpd}   MPD: $mpd_status 
+$if_mpd_playing        $mpd_smart
+        ${mpd_bar 1,25} $mpd_elapsed/$mpd_length$endif$endif
+
 ]]
 -- | UPDATES: ${execpi 900 /home/sergio/.local/bin/update_notifier.sh}
