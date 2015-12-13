@@ -7,10 +7,10 @@ Xft.rgba: rgb
 Xft.hinting: 1
 Xft.hintstyle:  hintslight
 
-Xcursor.theme: Openzone\ Black\ Slim
-Xcursor.size: 16
+Xcursor.theme: Breeze_Hacked
+!Xcursor.size: 16
 
-XTerm*faceName: Input:size=13
+XTerm*faceName: Input:size=12
 !XTerm*faceName: Termsyn:size=16
 
 !!Custom: De la imagen de rombos
@@ -132,24 +132,109 @@ XTerm*geometry: 80x24
 !*foreground: #EFECE3
 
 !Black background.
-XTerm*background: #2d2d2d
-XTerm*foreground: #EFECE3
-XTerm*color0: #4B3822
-XTerm*color8: #4B3822
-XTerm*color1: #A93D2E
-XTerm*color9: #A93D2E
-XTerm*color2: #7D893E
-XTerm*color10: #7D893E
-XTerm*color3: #D9AF30
-XTerm*color11: #D9AF30
-XTerm*color4: #557E8D
-XTerm*color12: #557E8D
-XTerm*color5: #D1725C
-XTerm*color13: #D1725C
-XTerm*color6: #8BBCCB
-XTerm*color14: #8BBCCB
-XTerm*color7: #EFECE3
-XTerm*color15: #EFECE3
+!XTerm*background: #2d2d2d
+!XTerm*foreground: #EFECE3
+!XTerm*color0: #4B3822
+!XTerm*color8: #4B3822
+!XTerm*color1: #A93D2E
+!XTerm*color9: #A93D2E
+!XTerm*color2: #7D893E
+!XTerm*color10: #7D893E
+!XTerm*color3: #D9AF30
+!XTerm*color11: #D9AF30
+!XTerm*color4: #557E8D
+!XTerm*color12: #557E8D
+!XTerm*color5: #D1725C
+!XTerm*color13: #D1725C
+!XTerm*color6: #8BBCCB
+!XTerm*color14: #8BBCCB
+!XTerm*color7: #EFECE3
+!XTerm*color15: #EFECE3
+
+
+!*background:	#20242c
+!*foreground:	#b3b8c4
+!*color0:	#3e4853
+!*color1:	#b06a58
+!*color2:	#95b47b
+!*color3:	#e5c078
+!*color4:	#58698c
+!*color5:	#7b5e8d
+!*color6:	#82a1b2
+!*color7:	#cccaca
+!*color8:	#525c67
+!*color9:	#ba7e6c
+!*color10:	#a9c88f
+!*color11:	#f9d48c
+!*color12:	#6c7da0
+!*color13:	#8f72a1
+!*color14:	#96b5c6
+!*color15:	#e0dede
+
+!*background: #e7e8eb
+!*foreground: #181512
+!*cursorColor: #181512
+!!black
+!*color0:     #373737
+!*color8:     #474747
+!!red (red)
+!*color1:     #CC4141
+!*color9:     #BA2929
+!!green (green)
+!*color2:     #43803D
+!*color10:    #2F632A
+!!yellow (blue)
+!*color3:     #7882BF
+!*color11:    #596196
+!!blue (brown)
+!*color4:     #DBAB3B
+!*color12:    #C79520
+!!magenta (magenta)
+!*color5:     #BF849C
+!*color13:    #B06A86
+!!cyan (light blue)
+!*color6:     #6AA9B0
+!*color14:    #4D8B91
+!!white (pink)
+!*color7:     #E39036
+!*color15:    #C97820
+
+! special
+*.foreground:   #747a81
+*.background:   #151515
+*.cursorColor:  #747a81
+
+! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+! red
+*.color1:       #bd3737
+*.color9:       #d64444
+
+! green
+*.color2:       #98a04b
+*.color10:      #a3aa5e
+
+! yellow
+*.color3:       #e5a458
+*.color11:      #d1aa68
+
+! blue
+*.color4:       #4b7598
+*.color12:      #588fbd
+
+! magenta
+*.color5:       #b890c5
+*.color13:      #d1b7d8
+
+! cyan
+*.color6:       #73ada5
+*.color14:      #8abeb7
+
+! white
+*.color7:       #959595
+*.color15:      #b9b9b9
 
 rofi.modi:                           window,run,ssh
 rofi.opacity:                        100
@@ -202,7 +287,7 @@ rofi.bw:                             2
 rofi.location:                       2
 rofi.padding:                        5
 !rofi.yoffset:                        34
-rofi.yoffset:                        0
+rofi.yoffset:                        26
 rofi.xoffset:                        0
 rofi.fixed-num-lines:                false
 rofi.terminal:                       /usr/bin/gnome-terminal
