@@ -14,6 +14,7 @@ Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdtree'
 Plug 'nanotech/jellybeans.vim'
 Plug 'ervandew/supertab'
+Plug 'morhetz/gruvbox'
 
 call plug#end()            " required
 filetype plugin indent on    " required
@@ -80,8 +81,9 @@ filetype plugin on
 filetype plugin indent on
 
 set cursorline
-"colorscheme nucolors
-colorscheme jellybeans
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let g:gruvbox_italic=1
+colorscheme gruvbox
 "Para el tema molokai
 "let g:molokai_original = 1
 "let g:rehash256 = 0

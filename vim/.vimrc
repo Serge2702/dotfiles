@@ -23,6 +23,7 @@ Plugin 'tomasr/molokai'
 Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'jpo/vim-railscasts-theme'
+Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -98,15 +99,14 @@ filetype plugin on
 filetype plugin indent on
 
 set cursorline
-"colorscheme nucolors
-colorscheme wombat
+let g:gruvbox_italic=1
+colorscheme gruvbox
 "Para el tema molokai
 "let g:molokai_original = 1
 "let g:rehash256 = 0
 
 "hi Normal ctermbg=none  "Para usar el mismo color de fondo que la terminal.
-"set guifont=DejaVu\ Sans\ Mono\ Book\ 14
-set guifont=Input\ 13
+set guifont=Input\ 12
 
 "Esto es para recordar la posición del cursor.
 augroup resCur
