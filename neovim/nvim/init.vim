@@ -15,6 +15,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'nanotech/jellybeans.vim'
 Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
+Plug 'nathanaelkane/vim-indent-guides'
 
 call plug#end()            " required
 filetype plugin indent on    " required
@@ -83,6 +84,8 @@ filetype plugin indent on
 set cursorline
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark="medium"
+let g:gruvbox_contrast_light="medium"
 colorscheme gruvbox
 "Para el tema molokai
 "let g:molokai_original = 1

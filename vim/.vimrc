@@ -24,6 +24,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'morhetz/gruvbox'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -100,6 +101,7 @@ filetype plugin indent on
 
 set cursorline
 let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark="soft"
 colorscheme gruvbox
 "Para el tema molokai
 "let g:molokai_original = 1
