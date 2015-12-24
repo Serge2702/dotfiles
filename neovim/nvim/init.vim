@@ -1,8 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'gmarik/Vundle.vim'
 Plug 'Valloric/MatchTagAlways'
-Plug 'sheerun/vim-wombat-scheme'
 Plug 'tomasr/molokai'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdcommenter'

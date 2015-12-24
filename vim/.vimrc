@@ -17,14 +17,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/MatchTagAlways'
-Plugin 'sheerun/vim-wombat-scheme'
-Plugin 'chrisbra/NrrwRgn'
 Plugin 'tomasr/molokai'
 Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'morhetz/gruvbox'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Yggdroot/indentLine'
+Plugin 'kien/rainbow_parentheses.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -186,7 +186,7 @@ let g:UltiSnipsEditSplit="vertical"
       ""
 
 let g:lightline={
-      \ 'colorscheme': 'default', 
+      \ 'colorscheme': 'gruvbox', 
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
       \ },
