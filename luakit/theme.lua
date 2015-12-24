@@ -1,1 +1,1 @@
-theme_ceti.lua
+theme_arc.lua
