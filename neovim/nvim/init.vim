@@ -15,7 +15,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'nanotech/jellybeans.vim'
 Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
+Plug 'kien/rainbow_parentheses.vim'
 
 call plug#end()            " required
 filetype plugin indent on    " required
@@ -141,7 +142,7 @@ let g:UltiSnipsEditSplit="vertical"
       ""
 
 let g:lightline={
-      \ 'colorscheme': 'default', 
+      \ 'colorscheme': 'gruvbox', 
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
       \ },
@@ -174,3 +175,9 @@ hi MBEVisibleNormal        guifg=#2d2d2d guibg=#dedede
 hi MBEVisibleChanged       guifg=#f7593e guibg=#dedede
 hi MBEVisibleActiveNormal  guifg=#000000 guibg=#ffffff
 hi MBEVisibleActiveChanged guifg=#f7593e guibg=#ffffff
+
+"Para rainbow-parenthesis
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
