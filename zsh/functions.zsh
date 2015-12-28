@@ -57,3 +57,22 @@ tmux_sessions(){
         numero_tmux=""
     fi
 }
+
+function in_git_dir()
+{
+    if  git branch &>/dev/null
+    then
+        estado_de_git
+    else
+        git_status=""
+    fi
+}
+
+function estado_de_git()
+{
+    estado=$(git status --porcelain)
+    untracked=$(echo $estado | grep '^??' | wc -l)
+    uncommited=$(echo $estado | grep '^[MARCD]' | wc -l)
+    not_added=$(echo $estado | grep '^.[MARCD]' | wc -l)
+    git_status="%{%F{$n_blue}%B%}[Branch: %{%F{$n_white}%B%}$(git branch --no-color | cut -d' ' -f2) %{%F{$n_blue}%B%}Not Added: %{%F{$n_white}%B%}$not_added %{%F{$n_blue}%B%}Not Commited: %{%F{$n_white}%B%}$uncommited%{%F{$n_blue}%B%}%{%F{$n_blue}%B%} Not Tracked: %{%F{$n_white}%B%}$untracked%{%F{$n_blue}%B%}]"
+}

@@ -22,6 +22,7 @@ case $TERM in
         precmd () {
             print -Pn "\e]0;%m: %1~\a"
             calcula_ancho
+            in_git_dir
             #tmux_sessions
         } 
         preexec () { 
@@ -71,3 +72,4 @@ fi
 PROMPT='%{%B%F{$n_blue}%}%n%{%B%F{$n_yellow}%}@%{%B%F{$n_green}%}%m%{%B%F{$n_red}%} [$dir_actual]
 $prompt_is_ssh$nivel_ranger%(0?,%{%B%F{$n_green}%},%{%B%F{$n_red}%})%# %{$reset_color%}'
 
+RPROMPT='$git_status'
