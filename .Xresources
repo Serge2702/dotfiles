@@ -85,7 +85,7 @@ XTerm*geometry: 80x24
 !*color7:  #7c6f64
 !*color15: #3c3836
 
-rofi.modi:                           window,run,ssh
+rofi.modi:                           window,run,drun,ssh
 rofi.opacity:                        100
 rofi.width:                          100
 rofi.lines:                          15
@@ -120,22 +120,17 @@ rofi.color-active:                   #ffffff,#c2cad0,#f5f5f5,#5294e2,#c2cad0
 !                                    'background', 'border'
 rofi.color-window:                   #ffffff,#f5f5f5
 
-!rofi.fg-active:                      #268BD2
-!rofi.fg-urgent:                      #DC322F
-!rofi.hlfg-active:                    #FDF6E3
-!rofi.hlfg-urgent:                    #FDF6E3
-!rofi.bg-active:                      #FDF6E3
-!rofi.bg-urgent:                      #FDF6E3
-!rofi.hlbg-active:                    #268BD2
-!rofi.hlbg-urgent:                    #DC322F
-!rofi.bgalt:                          #050709
-!rofi.hlfg:                           #EEE8D5
-!rofi.hlbg:                           #586E75
-!rofi.bc:                             #ffffff
+!! ------------------------------------------------------------------------------
+!! Gruvbox
+!! ------------------------------------------------------------------------------
+!rofi.color-window: #32302f, #282828, #282828
+!rofi.color-normal: #32302f, #ebdbb2, #282828, #ebdbb2, #32302f
+!rofi.color-active: #32302f, #83a598, #282828, #83a598, #32392f
+!rofi.color-urgent: #32302f, #fb4934, #282828, #fb4934, #32302f
+
 rofi.bw:                             2
 rofi.location:                       2
 rofi.padding:                        5
-!rofi.yoffset:                        34
 rofi.yoffset:                        26
 rofi.xoffset:                        0
 rofi.fixed-num-lines:                false
@@ -157,37 +152,7 @@ rofi.combi-modi:                     window,run
 rofi.fuzzy:                          true
 rofi.m:                              0
 rofi.line-margin:                    3
-rofi.separator-style:                solid
+rofi.separator-style:                dash
 rofi.hide-scrollbar:                 false
 rofi.pid:                            /run/user/1000/rofi.pid
-rofi.kb-primary-paste:               Control+Shift+v,Shift+Insert
-rofi.kb-secondary-paste:             Control+v,Insert
-rofi.kb-clear-line:                  Control+u
-rofi.kb-move-front:                  Control+a
-rofi.kb-move-end:                    Control+e
-rofi.kb-move-word-back:              Alt+b
-rofi.kb-move-word-forward:           Alt+f
-rofi.kb-move-char-back:              Left,Control+b
-rofi.kb-move-char-forward:           Right,Control+f
-rofi.kb-remove-word-back:            Control+Alt+h
-rofi.kb-remove-word-forward:         Control+Alt+d
-rofi.kb-remove-char-forward:         Delete,Control+d
-rofi.kb-remove-char-back:            BackSpace,Control+h
-rofi.kb-accept-entry:                Control+j,Control+m,Return,KP_Enter
-rofi.kb-accept-custom:               Control+Return
-rofi.kb-accept-entry-continue:       Shift+Return
-rofi.kb-mode-next:                   Shift+Right,Control+Tab
-rofi.kb-mode-previous:               Shift+Left,Control+Shift+Tab
-rofi.kb-toggle-case-sensitivity:     grave,dead_grave
-rofi.kb-delete-entry:                Shift+Delete
-rofi.kb-row-left:                    Control+Page_Up
-rofi.kb-row-right:                   Control+Page_Down
-rofi.kb-row-up:                      Up,Control+p,Shift+Tab
-rofi.kb-row-down:                    Down,Control+n
-rofi.kb-row-tab:                     Tab
-rofi.kb-page-prev:                   Page_Up
-rofi.kb-page-next:                   Page_Down
-rofi.kb-row-first:                   Home,KP_Home
-rofi.kb-row-last:                    End,KP_End
-rofi.kb-row-select:                  Control+space
-rofi.kb-cancel:                      Escape
+rofi.threads:                        0
