@@ -57,4 +57,3 @@ tmux_sessions(){
         numero_tmux=""
     fi
 }
-
