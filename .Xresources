@@ -112,21 +112,21 @@ rofi.color-enabled:                  true
 !!                                    'background', 'border'
 !rofi.color-window:                   #404142,#070504
 
-!!Arc
-!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
-rofi.color-normal:                   #ffffff,#525d76,#f5f5f5,#5294e2,#ffffff
-rofi.color-urgent:                   #ffffff,#dc322f,#f5f5f5,#5294e2,#dc322f
-rofi.color-active:                   #ffffff,#c2cad0,#f5f5f5,#5294e2,#c2cad0
-!                                    'background', 'border'
-rofi.color-window:                   #ffffff,#f5f5f5
+!!!Arc
+!!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
+!rofi.color-normal:                   #ffffff,#525d76,#f5f5f5,#5294e2,#ffffff
+!rofi.color-urgent:                   #ffffff,#dc322f,#f5f5f5,#5294e2,#dc322f
+!rofi.color-active:                   #ffffff,#c2cad0,#f5f5f5,#5294e2,#c2cad0
+!!                                    'background', 'border'
+!rofi.color-window:                   #ffffff,#f5f5f5
 
-!! ------------------------------------------------------------------------------
-!! Gruvbox
-!! ------------------------------------------------------------------------------
-!rofi.color-window: #32302f, #282828, #282828
-!rofi.color-normal: #32302f, #ebdbb2, #282828, #ebdbb2, #32302f
-!rofi.color-active: #32302f, #83a598, #282828, #83a598, #32392f
-!rofi.color-urgent: #32302f, #fb4934, #282828, #fb4934, #32302f
+! ------------------------------------------------------------------------------
+! Gruvbox
+! ------------------------------------------------------------------------------
+rofi.color-window: #32302f, #282828, #282828
+rofi.color-normal: #32302f, #ebdbb2, #282828, #ebdbb2, #32302f
+rofi.color-active: #32302f, #83a598, #282828, #83a598, #32392f
+rofi.color-urgent: #32302f, #fb4934, #282828, #fb4934, #32302f
 
 rofi.bw:                             2
 rofi.location:                       2
