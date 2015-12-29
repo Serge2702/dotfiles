@@ -60,7 +60,7 @@ tmux_sessions(){
 
 function in_git_dir()
 {
-    if  git branch &>/dev/null
+    if  [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1
     then
         estado_de_git
     else
