@@ -157,9 +157,19 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 "set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after 
 
+"Para syntastic
 "Para que syntastic use python2 en vez del 3:
 let g:syntastic_python_python_exec='/usr/bin/python2'
 let g:syntastic_python_checkers='flake8'
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "Para Valloric/MatchTagAlways
 let g:mta_filetypes = {'html' : 1,'xhtml' : 1,'xml' : 1,'jinja' : 1,'php' : 1}

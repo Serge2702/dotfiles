@@ -22,7 +22,6 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'morhetz/gruvbox'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Yggdroot/indentLine'
 Plugin 'kien/rainbow_parentheses.vim'
 
@@ -198,15 +197,18 @@ let g:lightline={
 ""Símbolos raros para lightline
 ""┃ ┤ ┣ ┫ ├ ┊ ▙ ░ ▒ ▓ ▔▕ ▖▗ ▘ ▙ ▚ ▛ ▜ ▝ ▞ ▟ ▙ ╠ ╣
 
-"Para latex:
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor = "latex"
-"set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after 
-
 "Para que syntastic use python2 en vez del 3:
 let g:syntastic_python_python_exec='/usr/bin/python2'
 let g:syntastic_python_checkers='flake8'
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 "Para Valloric/MatchTagAlways
 let g:mta_filetypes = {'html' : 1,'xhtml' : 1,'xml' : 1,'jinja' : 1,'php' : 1}
 let g:mta_use_matchparen_group = 1
@@ -219,3 +221,9 @@ hi MBEVisibleNormal        guifg=#2d2d2d guibg=#dedede
 hi MBEVisibleChanged       guifg=#f7593e guibg=#dedede
 hi MBEVisibleActiveNormal  guifg=#000000 guibg=#ffffff
 hi MBEVisibleActiveChanged guifg=#f7593e guibg=#ffffff
+
+"Para rainbow-parenthesis
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
