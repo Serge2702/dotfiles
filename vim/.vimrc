@@ -205,10 +205,15 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_signs = 1
+let g:syntastic_auto_jump = 3
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_quiet_messages = {"regex": 'used but not defined'}
+
 "Para Valloric/MatchTagAlways
 let g:mta_filetypes = {'html' : 1,'xhtml' : 1,'xml' : 1,'jinja' : 1,'php' : 1}
 let g:mta_use_matchparen_group = 1
