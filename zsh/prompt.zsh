@@ -35,6 +35,7 @@ case $TERM in
             #print -Pn "\e]83;title \"$1\"\a" 
             print -Pn "\e]0;tmux - %m: %1~\a"
             calcula_ancho
+            in_git_dir
             #tmux_sessions
         }
         preexec () { 
@@ -46,6 +47,7 @@ case $TERM in
     *)
         precmd () {
             calcula_ancho
+            in_git_dir
             #tmux_sessions
         } 
         ;;
