@@ -1,4 +1,5 @@
 /neovim/nvim/plugged/*
+/neovim/nvim/autoload/*
 /ranger/history
 /ranger/bookmarks
 /vim/.vim/bundle/*

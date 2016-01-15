@@ -5,7 +5,7 @@
 local theme = {}
 
 -- Default settings
-theme.font = "Source Sans Pro 13"
+theme.font = "Noto Sans 11"
 theme.fg   = "#fff"
 theme.bg   = "#e9eaeb"
 

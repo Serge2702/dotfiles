@@ -68,11 +68,11 @@ search_engines.default = search_engines.google
 domain_props = {
     ["all"] = {
         --["user-stylesheet-uri"]     = "file://"..luakit.data_dir.."/adblock.css",
-        sans_serif_font_family = "Source Sans Pro",
-        serif_font_family = "Source Serif Pro",
+        sans_serif_font_family = "Noto Sans",
+        serif_font_family = "Noto Serif",
         monospace_font_family = "Input",
         default_font_size = 20,
-        default_monospace_font_size = 13,
+        default_monospace_font_size = 12,
         minimum_font_size = 10,
     }, 
     --[[
