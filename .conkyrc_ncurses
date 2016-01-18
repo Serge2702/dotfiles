@@ -52,7 +52,8 @@ ${if_existing /sys/class/net/wlp3s0/operstate up}WIFI:
   TEMP: $acpitemp°C 
 
 ${if_running mpd}   MPD: $mpd_status 
-$if_mpd_playing        $mpd_smart
+$if_mpd_playing        $mpd_title - $mpd_album
+        $mpd_artist
         ${mpd_bar 1,25} $mpd_elapsed/$mpd_length$endif$endif
 
 ]]
