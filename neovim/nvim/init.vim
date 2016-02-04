@@ -83,7 +83,7 @@ filetype plugin indent on
 set cursorline
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark="soft"
+let g:gruvbox_contrast_dark="medium"
 let g:gruvbox_contrast_light="medium"
 colorscheme gruvbox
 "Para el tema molokai
