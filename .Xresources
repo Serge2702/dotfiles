@@ -7,7 +7,7 @@ Xft.rgba: rgb
 Xft.hinting: 1
 Xft.hintstyle:  hintslight
 
-Xcursor.theme: Breeze
+Xcursor.theme: OpenZone_Black_Slim
 
 XTerm*faceName: Input:size=12
 
