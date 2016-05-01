@@ -105,13 +105,13 @@ rofi.color-enabled:                  true
 !!                                    'background', 'border'
 !rofi.color-window:                   #343a41,#32383F
 
-!!Vertex
-!!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
-!rofi.color-normal:                   #404142,#ffffff,#454649,#4080fb,#ffffff
-!rofi.color-urgent:                   #404142,#dc322f,#454649,#4080fb,#dc322f
-!rofi.color-active:                   #404142,#c2cad0,#454649,#4080fb,#c2cad0
-!!                                    'background', 'border'
-!rofi.color-window:                   #404142,#070504
+!Vertex
+!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
+rofi.color-normal:                   #404142,#ffffff,#454649,#3d70d0,#ffffff
+rofi.color-urgent:                   #404142,#dc322f,#454649,#3d70d0,#dc322f
+rofi.color-active:                   #404142,#c2cad0,#454649,#3d70d0,#c2cad0
+!                                    'background', 'border'
+rofi.color-window:                   #404142,#070504
 
 !!!Arc
 !!State:                             'bg',   'fg',  'bgalt','hlbg', 'hlfg'
@@ -124,15 +124,15 @@ rofi.color-enabled:                  true
 ! ------------------------------------------------------------------------------
 ! Gruvbox
 ! ------------------------------------------------------------------------------
-rofi.color-window: #282828, #282828, #32302f
-rofi.color-normal: #282828, #ebdbb2, #32302f, #ebdbb2, #282828
-rofi.color-active: #282828, #83a598, #32302f, #83a598, #282828
-rofi.color-urgent: #282828, #fb4934, #32302f, #fb4934, #282828
+!rofi.color-window: #282828, #282828, #32302f
+!rofi.color-normal: #282828, #ebdbb2, #32302f, #ebdbb2, #282828
+!rofi.color-active: #282828, #83a598, #32302f, #83a598, #282828
+!rofi.color-urgent: #282828, #fb4934, #32302f, #fb4934, #282828
 
 rofi.bw:                             2
 rofi.location:                       2
 rofi.padding:                        5
-rofi.yoffset:                        26
+rofi.yoffset:                        0
 rofi.xoffset:                        0
 rofi.fixed-num-lines:                false
 rofi.terminal:                       /usr/bin/gnome-terminal
