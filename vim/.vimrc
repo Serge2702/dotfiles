@@ -20,10 +20,16 @@ Plugin 'Valloric/MatchTagAlways'
 Plugin 'tomasr/molokai'
 Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'jpo/vim-railscasts-theme'
 Plugin 'morhetz/gruvbox'
 Plugin 'Yggdroot/indentLine'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'SirVer/ultisnips'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ervandew/supertab'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,7 +88,7 @@ set formatoptions=c,q,r
 
 set ruler 
  
-set background=dark 
+set background=light 
  
 set mouse=a  
 
@@ -101,13 +107,14 @@ filetype plugin indent on
 set cursorline
 let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark="medium"
-colorscheme gruvbox
+let g:gruvbox_contrast_light="medium"
+colorscheme solarized
 "Para el tema molokai
 "let g:molokai_original = 1
 "let g:rehash256 = 0
 
 "hi Normal ctermbg=none  "Para usar el mismo color de fondo que la terminal.
-set guifont=Input\ 12
+set guifont=Input\ 10
 
 "Esto es para recordar la posición del cursor.
 augroup resCur
@@ -185,7 +192,7 @@ let g:UltiSnipsEditSplit="vertical"
       ""
 
 let g:lightline={
-      \ 'colorscheme': 'gruvbox', 
+      \ 'colorscheme': 'solarized_light', 
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
       \ },
