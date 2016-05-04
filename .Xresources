@@ -9,7 +9,7 @@ Xft.hintstyle:  hintslight
 
 Xcursor.theme: OpenZone_Black_Slim
 
-XTerm*faceName: Input:size=12
+XTerm*faceName: Input:size=10
 
 XTerm*geometry: 80x24
 
