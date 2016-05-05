@@ -88,7 +88,6 @@ set formatoptions=c,q,r
 
 set ruler 
  
-set background=light 
  
 set mouse=a  
 
@@ -104,17 +103,37 @@ syntax enable
 filetype plugin on
 filetype plugin indent on
 
-set cursorline
-let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark="medium"
-let g:gruvbox_contrast_light="medium"
-colorscheme solarized
-"Para el tema molokai
-"let g:molokai_original = 1
-"let g:rehash256 = 0
-
 "hi Normal ctermbg=none  "Para usar el mismo color de fondo que la terminal.
-set guifont=Input\ 10
+set cursorline
+
+"Esto es para el tamaño de gvim
+if has("gui_running")
+    set guifont=Input\ 10
+    set lines=24 columns=80
+    set background=light 
+    colorscheme solarized
+    let g:lightline={
+                \ 'colorscheme': 'solarized_light', 
+                \ 'component': {
+                \   'readonly': '%{&readonly?"":""}',
+                \ },
+                \ 'separator': { 'left': '', 'right': '' },
+                \ 'subseparator': { 'left': '', 'right': '' }
+                \ }
+else
+    set background=dark 
+    let g:gruvbox_contrast_dark="medium"
+    let g:gruvbox_contrast_light="medium"
+    colorscheme gruvbox
+    let g:lightline={
+                \ 'colorscheme': 'gruvbox', 
+                \ 'component': {
+                \   'readonly': '%{&readonly?"":""}',
+                \ },
+                \ 'separator': { 'left': '', 'right': '' },
+                \ 'subseparator': { 'left': '', 'right': '' }
+                \ }
+endif
 
 "Esto es para recordar la posición del cursor.
 augroup resCur
@@ -137,11 +156,6 @@ set noswapfile
 set laststatus=2
 set noshowmode
 "set showtabline=2
-
-"Esto es para el tamaño de gvim
-if has("gui_running")
-    set lines=24 columns=80
-endif
 
 "Esto es para usar ranger como explorador de archivos:
 function! RangerChooser()
@@ -180,26 +194,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-v>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-
-"let g:lightline={
-      "\ 'colorscheme': 'default', 
-      "\ 'component': {
-      "\   'readonly': '%{&readonly?"":""}',
-      "\ },
-      "\ 'separator': { 'left': '', 'right': '' },
-      "\ 'subseparator': { 'left': '', 'right': '' }
-      "\ }
-      ""
-
-let g:lightline={
-      \ 'colorscheme': 'solarized_light', 
-      \ 'component': {
-      \   'readonly': '%{&readonly?"":""}',
-      \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '│', 'right': '│' }
-      \ }
-      "
 
 ""Símbolos raros para lightline
 ""┃ ┤ ┣ ┫ ├ ┊ ▙ ░ ▒ ▓ ▔▕ ▖▗ ▘ ▙ ▚ ▛ ▜ ▝ ▞ ▟ ▙ ╠ ╣
