@@ -103,17 +103,18 @@ syntax enable
 filetype plugin on
 filetype plugin indent on
 
-"hi Normal ctermbg=none  "Para usar el mismo color de fondo que la terminal.
 set cursorline
 
 "Esto es para el tamaño de gvim
 if has("gui_running")
     set guifont=Input\ 10
     set lines=24 columns=80
-    set background=light 
+    set background=light
+    "let g:gruvbox_contrast_dark="medium"
+    "let g:gruvbox_contrast_light="medium"
     colorscheme solarized
     let g:lightline={
-                \ 'colorscheme': 'solarized_light', 
+                \ 'colorscheme': 'solarized', 
                 \ 'component': {
                 \   'readonly': '%{&readonly?"":""}',
                 \ },
@@ -134,6 +135,7 @@ else
                 \ 'subseparator': { 'left': '', 'right': '' }
                 \ }
 endif
+"hi Normal ctermbg=none  "Para usar el mismo color de fondo que la terminal.
 
 "Esto es para recordar la posición del cursor.
 augroup resCur
