@@ -74,4 +74,4 @@ fi
 PROMPT='%{%B%F{$n_blue}%}%n%{%B%F{$n_yellow}%}@%{%B%F{$n_green}%}%m%{%B%F{$n_red}%} [$dir_actual]
 $prompt_is_ssh$nivel_ranger%(0?,%{%B%F{$n_green}%},%{%B%F{$n_red}%})%# %{$reset_color%}'
 
-RPROMPT='$git_status'
+#RPROMPT='$git_status'
